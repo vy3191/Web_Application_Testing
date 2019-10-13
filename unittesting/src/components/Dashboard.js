@@ -2,13 +2,13 @@ import React from 'react';
 import {Button} from 'react-bootstrap';
 
 
-function Dashboard() {
+function Dashboard({ResetBalls, ResetStrikes, ResetHits, ResetFouls}) {
   return (
     <div>
-      <Button variant="primary">Ball</Button>
-      <Button variant="primary">Strike</Button>
-      <Button variant="primary">Hit</Button>
-      <Button variant="primary">Foul</Button> 
+      <Button variant="primary" onClick={ResetBalls}>Ball</Button>
+      <Button variant="primary" onClick={ResetStrikes}>Strike</Button>
+      <Button variant="primary" onClick={ResetHits}>Hit</Button>
+      <Button variant="primary" onClick={ResetFouls}>Foul</Button> 
     </div>
   )
 }
